@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "buildt": "tailwindcss -i ./style.css -o ./css/main.css",
+    "watcht": "tailwindcss -i ./style.css -o ./css/main.css --watch",
+    "minify": "npx tailwindcss -o ./css/main.css --minify; echo '>>>>> use css/main.css in your HTML, then open index.html with your browser'",
+    "mock-deploy": "copy and paste index.html, css folder, and any images to a new deploy folder, then open index.html with your browser",
+    "deploy": "copy and paste the deploy or dist folder to your hosting root",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.2.1"
+  }
+}
